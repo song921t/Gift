@@ -27,3 +27,5 @@ Route::delete('logout', 'SessionsController@destroy')->name('logout');
 
 Route::post('deal', 'UsersController@deal')->name('deal');//测试路由
 
+Route::get('signup/confirm/{token}', 'UsersController@confirmEmail')->name('confirm_email');
+
